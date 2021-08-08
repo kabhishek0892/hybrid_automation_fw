@@ -1,4 +1,8 @@
 # hybrid_automation_fw
+
+How to run the project :
+# Checkout and build the project
+
 Include step-by-step test definitions  (Mapping to requirements)
 
 #Requirements :
