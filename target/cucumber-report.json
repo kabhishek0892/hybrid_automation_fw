@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-25T14:46:01.346Z",
+        "line": 3,
+        "name": "Search movies by title for ‘Harry Potter’ and list the IDs of all results.",
+        "description": "",
+        "id": "search-movies-by-title;search-movies-by-title-for-‘harry-potter’-and-list-the-ids-of-all-results.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 520000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I prepare GET request to OMDB api endpoint",
+            "match": {
+              "location": "stepDefinitions.OMDApiSteps.SetGETRequestToOMDBApiEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Set query param",
+            "match": {
+              "location": "stepDefinitions.OMDApiSteps.iSetQueryParam()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1953000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Send a GET HTTP request",
+            "match": {
+              "location": "stepDefinitions.OMDApiSteps.send_a_get_http_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I receive valid Response",
+            "match": {
+              "location": "stepDefinitions.OMDApiSteps.i_receive_valid_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 709000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I list the id of all results",
+            "match": {
+              "location": "stepDefinitions.OMDApiSteps.i_list_the_id_of_all_results()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Search movies by title",
+    "description": "",
+    "id": "search-movies-by-title",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com.rr.api.features/searchMovies.feature",
+    "tags": []
+  }
+]
